@@ -1,0 +1,4 @@
+Constrained Instances: 'P-R-1', 'P-R-1', 'Podstawa-P-1', 'Podstawa-P-1'
+Constraint Name: Szerokoœæ1
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------
