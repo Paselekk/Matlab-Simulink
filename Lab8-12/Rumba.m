@@ -72,9 +72,10 @@ mr_co=[-l/2,l/2,l/2,-l/2,-l/2;
 
 figure
 for i=1:length(t) % początek animacji
-x=[0 285 285 305 305 500 500 445 445 500 500 0 0 330 330 0 0 95 95 0 0]
-y=[0 0 160 160 0  0 240 240 260 260 500 500 380 380 360 360 140 140 120 120 0]
-fill(x,y,'p')
+    set(gca,'Color','k')
+x=[0 285 285 305 305 500 500 445 445 500 500  0   0  330 330  0   0  95  95   0  0]
+y=[0  0  160 160  0   0  240 240 260 260 500 500 380 380 360 360 140 140 120 120 0]
+fill(x,y,[.7 .7 .7])
 hold on
 x=[135 385 385 135]
 y=[240 240 260 260]
@@ -121,6 +122,7 @@ for i=1:length(t)
        eta_dot(:,i) = J_psi*zeta(:,i); % Pochodna czasowa po współrzędnych uogólnionych
 
        eta(:,i+1) = eta(:,i)+dt*eta_dot(:,i); % metoda Eulera
+       set(gca,'color',[0 0 0])
 end
 %%Wydruk funkcji
 figure
